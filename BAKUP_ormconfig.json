@@ -1,0 +1,21 @@
+{
+  "synchronize": true,
+  "logging": true,
+  "entities": [
+     "src/typeorm/entities/**/*.ts"
+  ],
+  "migrations": [
+     "src/typeorm/migration/**/*.ts"
+  ],
+  "subscribers": [
+     "src/typeorm/subscriber/**/*.ts"
+  ],
+  "cli": {
+   //   "entitiesDir": "src/entity",
+   //   "migrationsDir": "src/migration",
+   //   "subscribersDir": "src/subscriber"
+   "entitiesDir": "src/typeorm/entities",
+   "migrationsDir": "src/typeorm/migrations",
+   "subscribersDir": "src/typeorm/subscriber",
+  }
+}

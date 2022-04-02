@@ -1,0 +1,12 @@
+{
+  "extends": "./tsconfig.json",
+  "compilerOptions": {
+    "sourceMap": false,
+    "types": ["node"],
+    "typeRoots": ["./src/types", "node_modules/@types"],
+    "paths": {
+      "*": ["node_modules/*"]
+    }
+  },
+  "exclude": ["spec", "src/**/*.mock.ts", "src/public/"]
+}
